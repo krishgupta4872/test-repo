@@ -1,0 +1,24 @@
+MOV AX,[0200H]
+MOV DX,AX
+MOV BX,[0202H]
+
+ADD AX,BX
+
+MOV [0204h],AX
+MOV AX,DX
+
+SUB AX,BX
+
+MOV [0206h],AX
+MOV AX,DX
+
+
+MUL BX
+
+MOV [0208h],AX
+
+HLT;    
+
+
+
+
